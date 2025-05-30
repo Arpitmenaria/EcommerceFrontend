@@ -1,0 +1,44 @@
+.container {
+text-align: center;
+}
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: auto;
+    background-color: transparent;
+    color: #ffffff; /* White text */
+    border: 2px solid #4CAF50; /* Green border */
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+input::placeholder {
+    color: #b0b0b0; /* Light gray placeholder text */
+}
+
+input:focus {
+    border-color: #66bb6a; /* Lighter green focus effect */
+    box-shadow: 0 0 8px rgba(102, 187, 106, 0.8); 
+}
+
+/* Button Styling */
+.subbutton {
+    width: 120px;
+    background-color: #4CAF50; /* Green button */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 12px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.subbutton:hover {
+    background-color: #5d675e; /* Darker green on hover */
+}

@@ -1,0 +1,18 @@
+.admin-dashboard {
+    background-color: #121212;
+    color: #fff;
+    padding: 20px;
+}
+
+.dashboard-content {
+    display: flex;
+    gap: 20px;
+}
+
+.dashboard-card {
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+}

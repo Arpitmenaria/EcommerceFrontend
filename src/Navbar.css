@@ -1,0 +1,183 @@
+/* Navbar container */
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Space between logo & menu */
+    align-items: center;
+    padding: 15px 40px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  /* Logo */
+  nav div {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Navigation menu */
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Ensure items are vertically aligned */
+    justify-content: center; /* Center the menu items */
+    gap: 20px;
+    margin: 0 auto; /* Centering the menu */
+    padding: 0;
+  }
+  
+  /* Menu items */
+  nav ul li {
+    position: relative;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li:hover {
+    /* color: gray; */
+    background-color: rgb(1, 12, 12);
+  }
+  
+  /* Dropdown menu */
+  nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* background: white; */
+    background-color: rgb(9, 46, 46);
+    color: black;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Ensure dropdown appears smoothly */
+  nav ul li:hover ul {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Dropdown items */
+  nav ul li ul li {
+    padding: 10px 15px;
+    white-space: nowrap;
+    transition: background 0.3s ease;
+  }
+  
+  nav ul li ul li:hover {
+    background: rgb(30, 12, 12);
+  }
+  
+  /* Icons container */
+  .icon {
+    display: flex;
+    gap: 15px; /* Add space between icons */
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Individual icons */
+  .icon li {
+    list-style: none;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .icon li:hover {
+    color: gray;
+  }
+  
+  /* 📌 Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  
+    nav ul li {
+      width: 100%;
+    }
+  
+    nav ul li ul {
+      position: static;
+      width: 100%;
+      box-shadow: none;
+    }
+  }
+  .cart-icon {
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .cart-icon a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+  }
+  
+  .cart-icon a:hover {
+    color: red;
+  }
+  
+  .profile-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 22px; /* Adjust icon size */
+    padding: 10px;
+  }
+  
+  .profile-icon a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-dropdown {
+    display: none;
+    position: absolute;
+    top: 40px; /* Adjust dropdown position */
+    right: 0;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 120px;
+    text-align: center;
+  }
+  
+  .profile-dropdown a {
+    display: block;
+    padding: 10px;
+    color: black;
+    transition: 0.3s;
+  }
+  
+  .profile-dropdown a:hover {
+    background: #f0f0f0;
+  }
+  
+  .profile-icon:hover .profile-dropdown {
+    display: block;
+  }
+  

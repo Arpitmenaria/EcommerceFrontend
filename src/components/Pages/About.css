@@ -1,6 +1,74 @@
+/* About.css */
 
-h4, h3, p {
-    color: white;
-    text-align: center;
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f8eeee;
+}
 
+.about-container h3,
+.about-container h4,
+.about-container h2 {
+  color: #cec4c4;
+  margin-bottom: 0.5rem;
+}
+
+.about-container h3 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.about-container h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.about-container p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.testimonial {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-left: 5px solid #007BFF;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.testimonial h4 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1.1rem;
+  color: #007BFF;
+}
+
+.testimonial p {
+  margin: 0;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-container h3 {
+    font-size: 1.4rem;
+  }
+
+  .about-container h4 {
+    font-size: 1.1rem;
+  }
+
+  .about-container p {
+    font-size: 0.95rem;
+  }
 }
